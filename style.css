@@ -1,5 +1,5 @@
 body{
-    background-image: url("weather img.png");
+    background-image: url("assets/weather.png");
   }
   
   nav{
@@ -15,21 +15,11 @@ body{
       color: white;
   }
   
-  .box{
-      position: relative;
-      box-shadow: 5px 20px 15px 5px rgba(0, 0, 0, 0.5);
-      left: 60%;
-      margin-top: 5%;
-      border-radius: 2%;
-      height: 550px;
-      width: 400px;
-      background-color: rgb(119, 118, 118);
-      border: solid rgb(99, 98, 98);
-  }
-  
   hr{
-      position: relative;
-      top: 12%;
+      position:relative;
+      margin-top: 35%;
+      width: 90%;
+      transform: translate(0px, 60px);
   }
   
   h2{
@@ -38,7 +28,7 @@ body{
       left: 3%;
       color: rgb(227, 232, 232);
       font-size:70px;
-      /* font-weight: bold; */
+      font-weight: bold; 
       text-shadow: 
               -1px -1px 0 #000,  
                1px -1px 0 #000,
@@ -115,8 +105,32 @@ body{
       width: 50px;
   }
   
+  .deg1{
+      position:absolute;
+      top: 80%;
+      height: 20px;
+      width: 20px;
+  }
+  
+  #rain{
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      top: 5%;
+      left: 5%;
+  }
+  
   .location{
       text-align: center;
+      font-weight: bold;
+      font-size: 20px
+  }
+  
+  .deg{
+      position: absolute;
+      left: 79%;
+      top:8%;
+      font-weight: bold;
   }
   
   span{
@@ -124,13 +138,116 @@ body{
       font-family: 'Courier New', Courier, monospace;
   }
   
-  .a,.b{
+  
+  #sunrise{
+      position: absolute;
+      top: 26%;
+      left: 5%;
+     height: 50px;
+     width: 50px;
+  
+  }
+  
+  .a{
+      position: absolute;
       text-align: left;
-      top: 20%;
-  
+      font-family: cursive;
+      top: 23%;
+      left: 20%;
+      font-weight: bold;
+      font-size: 20px;
+      
   }
   
-  .c,.d{
-      text-align: center;
   
+  #humidity{
+      position: absolute;
+      top: 42%;
+      left: 5%;
+      height: 50px;
+      width: 50px;
   }
+  
+  .b{
+      position: absolute;
+      text-align: left;
+      font-family: cursive;
+      top: 38%;
+      left: 20%;
+      font-weight: bold;
+      font-size: 20px;
+      
+  }
+  
+  #wind{
+      position: absolute;
+      top: 42%;
+      left: 55%;
+      height: 50px;
+      width: 50px;
+  }
+  
+  .c{
+      position: absolute;
+      text-align: right;
+      top: 23%;
+      left: 70%;
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+  #sunset{
+      position: absolute;
+      top: 27%;
+      left: 55%;
+      height: 50px;
+      width: 50px;
+  }
+  
+  .d{
+      position: absolute;
+      text-align: right;
+      font-family: cursive;
+      top: 38%;
+      left: 70%;
+      font-weight: bold;
+      font-size: 20px;
+      
+  }
+  
+  .box {
+      position: relative;
+      box-shadow: 5px 20px 15px 5px rgba(0, 0, 0, 0.5);
+      left: 60%;
+      margin-top: 5%;
+      border-radius: 2%;
+      height: 570px;
+      width: 400px;
+      background-color: rgb(119, 118, 118);
+      border: solid rgb(99, 98, 98);
+      animation: slideFromRight 5s linear infinite;
+  }
+  
+   @keyframes slideFromRight {
+      0% {
+          opacity: 0;
+          transform: translateX(100%);
+      }
+      40% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      50% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      90% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      100% {
+          opacity: 0;
+          transform: translateX(0);
+      }
+  } 

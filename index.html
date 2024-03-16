@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-gM0WDmFUDWJ7X9vVT9R2iWjWwT5TtY1WtRFSY1/7RvBxgLJfh30K6sb9mYp/2xBfhxWk6mqiM0myy1/VafQT7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
@@ -22,28 +21,36 @@
     </div>
     
     <div class="box">
-            
-        <p class="location">Pune <br><span>Hourly Weather</span></p>
-            <hr>
-            <p class="a">Sunrise</p>
-            <p class="b">Humadity</p><br>
-            <p class="c">Sunset</p>
-            <p class="d">Windspeed  <i class="fa-solid fa-wind"></i></p>
+        <div class="city">
+            <img src="assets\rain.svg" id="rain">
+            <p class="location">Pune <br><span>Hourly Weather</span><br> <span class="deg">30°</span></p>
+            <img src="\assets\sunrise.svg" id="sunrise"/>
+            <p class="a">Sunrise <br><span>6.45AM</span></p>
+            <img src="assets\humidity.svg" id="humidity">
+            <p class="b">Humadity <br><span>70%</span></p><br>
+            <img src="assets\sunset.svg" id="sunset">
+            <p class="c">Sunset<br><span>6.45PM</span></p>
+            <img src="assets\wind.svg" id="wind"> 
+            <p class="d">Windspeed <br><span>8 Km/h</span></p>
         <hr>
+        </div>  
 
         <div id="inbox">
             
             <div class="sat">
                 <img src="https://themesfamily.com/2024/mugni/assets/img/icon/1.png"  id="sat-img" alt="sat-weather">
                 <p>Sat</p>
+                <p class="deg1">+30°</p>
             </div>
             <div class="sun">
                 <img src="https://themesfamily.com/2024/mugni/assets/img/icon/2.png" id="sun-img" alt="sun-weather">
                 <p>Sun</p>
+                <p class="deg1">+30°</p>
             </div>
             <div class="mon">
                 <img src="https://themesfamily.com/2024/mugni/assets/img/icon/3.png" id="mon-img" alt="mon-weather">
                 <p>Mon</p>
+                <p class="deg1">+30°</p>
             </div>
 
         </div>
