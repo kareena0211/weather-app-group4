@@ -1,0 +1,253 @@
+body{
+    background-image: url("assets/weather.png");
+  }
+  
+  nav{
+      display: flex;
+      justify-content: space-between ;
+      color: white;
+      margin-left: 700px;
+      margin-right: 50px; 
+  }
+  
+  a{
+      text-decoration: none;
+      color: white;
+  }
+  
+  hr{
+      position:relative;
+      margin-top: 35%;
+      width: 90%;
+      transform: translate(0px, 60px);
+  }
+  
+  h2{
+      position: absolute;
+      top: 20%;
+      left: 3%;
+      color: rgb(227, 232, 232);
+      font-size:70px;
+      font-weight: bold; 
+      text-shadow: 
+              -1px -1px 0 #000,  
+               1px -1px 0 #000,
+              -1px  1px 0 #000,
+               1px  1px 0 #000;
+  }
+  
+  .para{
+      position: absolute;
+      top: 45%;
+      left: 3%;
+      font-size:20px;
+      font-family: cursive;
+      color: white;
+      
+  }
+  
+  #inbox{
+      margin-top: 100px;
+  }
+  
+  .sat{
+      border-radius: 5%;
+      justify-content: space-around;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: inset -8px -8px 64px rgba(255,255,255,.9), inset 8px 8px 64px rgba(0,0,0,.9);
+      display: flex;
+      float: left;
+      margin-left: 10px;
+      height: 200px;
+      width: 100px;
+      border:  solid white;
+      
+  }
+  
+  .sun{
+      border-radius: 5%;
+      color: white;
+      justify-content: space-around;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: inset -8px -8px 64px rgba(255,255,255,.9), inset 8px 8px 64px rgba(0,0,0,.9);
+      display: flex;
+      float: left;
+      margin-left: 40px;
+      height: 200px;
+      width: 100px;
+      border: solid white;
+  }
+  
+  .mon{
+      border-radius: 5%;
+      justify-content: space-around;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: inset -8px -8px 64px rgba(255,255,255,.9), inset 8px 8px 64px rgba(0,0,0,.9);
+      display: flex;
+      float: right;
+      margin-right: 10px;
+      margin-bottom: 500px;
+      height: 200px;
+      width: 100px;
+      border: solid white;
+  }
+  
+  
+  #sat-img , #sun-img, #mon-img{
+      position:absolute;
+      top: 75%;
+      height: 50px;
+      width: 50px;
+  }
+  
+  .deg1{
+      position:absolute;
+      top: 80%;
+      height: 20px;
+      width: 20px;
+  }
+  
+  #rain{
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      top: 5%;
+      left: 5%;
+  }
+  
+  .location{
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px
+  }
+  
+  .deg{
+      position: absolute;
+      left: 79%;
+      top:8%;
+      font-weight: bold;
+  }
+  
+  span{
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  #sunrise{
+      position: absolute;
+      top: 26%;
+      left: 5%;
+     height: 50px;
+     width: 50px;
+  
+  }
+  
+  .a{
+      position: absolute;
+      text-align: left;
+      font-family: cursive;
+      top: 23%;
+      left: 20%;
+      font-weight: bold;
+      font-size: 20px;
+      
+  }
+  
+  
+  #humidity{
+      position: absolute;
+      top: 42%;
+      left: 5%;
+      height: 50px;
+      width: 50px;
+  }
+  
+  .b{
+      position: absolute;
+      text-align: left;
+      font-family: cursive;
+      top: 38%;
+      left: 20%;
+      font-weight: bold;
+      font-size: 20px;
+      
+  }
+  
+  #wind{
+      position: absolute;
+      top: 42%;
+      left: 55%;
+      height: 50px;
+      width: 50px;
+  }
+  
+  .c{
+      position: absolute;
+      text-align: right;
+      top: 23%;
+      left: 70%;
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+  #sunset{
+      position: absolute;
+      top: 27%;
+      left: 55%;
+      height: 50px;
+      width: 50px;
+  }
+  
+  .d{
+      position: absolute;
+      text-align: right;
+      font-family: cursive;
+      top: 38%;
+      left: 70%;
+      font-weight: bold;
+      font-size: 20px;
+      
+  }
+  
+  .box {
+      position: relative;
+      box-shadow: 5px 20px 15px 5px rgba(0, 0, 0, 0.5);
+      left: 60%;
+      margin-top: 5%;
+      border-radius: 2%;
+      height: 570px;
+      width: 400px;
+      background-color: rgb(119, 118, 118);
+      border: solid rgb(99, 98, 98);
+      animation: slideFromRight 5s linear infinite;
+  }
+  
+   @keyframes slideFromRight {
+      0% {
+          opacity: 0;
+          transform: translateX(100%);
+      }
+      40% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      50% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      90% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      100% {
+          opacity: 0;
+          transform: translateX(0);
+      }
+  } 
