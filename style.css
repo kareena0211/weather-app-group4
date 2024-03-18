@@ -1,253 +1,304 @@
+@import url('https://fonts.googlepis.com/css2?family=poppins&display=swap');
 body{
-    background-image: url("assets/weather.png");
-  }
+  font-family: 'poppins',sans-serif;
+  background-image: url("https://t3.ftcdn.net/jpg/02/50/08/68/360_F_250086872_srlXRqANYR2IbNfIylRDc3eMO9MinjnV.jpg");
+  background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    color: white;
+    width: 50%;
+    margin-left: 40%;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 
+            -1px -1px 0 #0f0f0f,  
+             1px -1px 0 #131313,
+            -1px  1px 0 #0d0d0d,
+             1px  1px 0 #0b0b0b;
+}
+
+hr{
+    position:relative;
+    margin-top: 35%;
+    width: 90%;
+    transform: translate(0px, 60px);
+}
+
+h2{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    color: rgb(10, 11, 11);
+    font-size:70px;
+    font-weight: bold; 
+    animation: slideIn 0.4s ease forwards;
+}
   
-  nav{
-      display: flex;
-      justify-content: space-between ;
-      color: white;
-      margin-left: 700px;
-      margin-right: 50px; 
-  }
-  
-  a{
-      text-decoration: none;
-      color: white;
-  }
-  
-  hr{
-      position:relative;
-      margin-top: 35%;
-      width: 90%;
-      transform: translate(0px, 60px);
-  }
-  
-  h2{
-      position: absolute;
-      top: 20%;
-      left: 3%;
-      color: rgb(227, 232, 232);
-      font-size:70px;
-      font-weight: bold; 
-      text-shadow: 
-              -1px -1px 0 #000,  
-               1px -1px 0 #000,
-              -1px  1px 0 #000,
-               1px  1px 0 #000;
-  }
-  
-  .para{
-      position: absolute;
-      top: 45%;
-      left: 3%;
-      font-size:20px;
-      font-family: cursive;
-      color: white;
-      
-  }
-  
-  #inbox{
-      margin-top: 100px;
-  }
-  
-  .sat{
-      border-radius: 5%;
-      justify-content: space-around;
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-      box-shadow: inset -8px -8px 64px rgba(255,255,255,.9), inset 8px 8px 64px rgba(0,0,0,.9);
-      display: flex;
-      float: left;
-      margin-left: 10px;
-      height: 200px;
-      width: 100px;
-      border:  solid white;
-      
-  }
-  
-  .sun{
-      border-radius: 5%;
-      color: white;
-      justify-content: space-around;
-      font-size: 30px;
-      font-weight: bold;
-      box-shadow: inset -8px -8px 64px rgba(255,255,255,.9), inset 8px 8px 64px rgba(0,0,0,.9);
-      display: flex;
-      float: left;
-      margin-left: 40px;
-      height: 200px;
-      width: 100px;
-      border: solid white;
-  }
-  
-  .mon{
-      border-radius: 5%;
-      justify-content: space-around;
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-      box-shadow: inset -8px -8px 64px rgba(255,255,255,.9), inset 8px 8px 64px rgba(0,0,0,.9);
-      display: flex;
-      float: right;
-      margin-right: 10px;
-      margin-bottom: 500px;
-      height: 200px;
-      width: 100px;
-      border: solid white;
-  }
-  
-  
-  #sat-img , #sun-img, #mon-img{
-      position:absolute;
-      top: 75%;
-      height: 50px;
-      width: 50px;
-  }
-  
-  .deg1{
-      position:absolute;
-      top: 80%;
-      height: 20px;
-      width: 20px;
-  }
-  
-  #rain{
-      position: absolute;
-      height: 60px;
-      width: 60px;
-      top: 5%;
-      left: 5%;
-  }
-  
-  .location{
-      text-align: center;
-      font-weight: bold;
-      font-size: 20px
-  }
-  
-  .deg{
-      position: absolute;
-      left: 79%;
-      top:8%;
-      font-weight: bold;
-  }
-  
-  span{
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-  }
-  
-  
-  #sunrise{
-      position: absolute;
-      top: 26%;
-      left: 5%;
-     height: 50px;
-     width: 50px;
-  
-  }
-  
-  .a{
-      position: absolute;
-      text-align: left;
-      font-family: cursive;
-      top: 23%;
-      left: 20%;
-      font-weight: bold;
-      font-size: 20px;
-      
-  }
-  
-  
-  #humidity{
-      position: absolute;
-      top: 42%;
-      left: 5%;
-      height: 50px;
-      width: 50px;
-  }
-  
-  .b{
-      position: absolute;
-      text-align: left;
-      font-family: cursive;
-      top: 38%;
-      left: 20%;
-      font-weight: bold;
-      font-size: 20px;
-      
-  }
-  
-  #wind{
-      position: absolute;
-      top: 42%;
-      left: 55%;
-      height: 50px;
-      width: 50px;
-  }
-  
-  .c{
-      position: absolute;
-      text-align: right;
-      top: 23%;
-      left: 70%;
-      font-family: cursive;
-      font-weight: bold;
-      font-size: 20px;
-  }
-  
-  #sunset{
-      position: absolute;
-      top: 27%;
-      left: 55%;
-      height: 50px;
-      width: 50px;
-  }
-  
-  .d{
-      position: absolute;
-      text-align: right;
-      font-family: cursive;
-      top: 38%;
-      left: 70%;
-      font-weight: bold;
-      font-size: 20px;
-      
-  }
-  
-  .box {
-      position: relative;
-      box-shadow: 5px 20px 15px 5px rgba(0, 0, 0, 0.5);
-      left: 60%;
-      margin-top: 5%;
-      border-radius: 2%;
-      height: 570px;
-      width: 400px;
-      background-color: rgb(119, 118, 118);
-      border: solid rgb(99, 98, 98);
-      animation: slideFromRight 5s linear infinite;
-  }
-  
-   @keyframes slideFromRight {
-      0% {
-          opacity: 0;
-          transform: translateX(100%);
-      }
-      40% {
-          opacity: 1;
-          transform: translateX(0);
-      }
-      50% {
-          opacity: 1;
-          transform: translateX(0);
-      }
-      90% {
-          opacity: 1;
-          transform: translateX(0);
-      }
-      100% {
-          opacity: 0;
-          transform: translateX(0);
-      }
-  } 
+.para{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    font-size:20px;
+    font-family: cursive;
+   
+}
+
+#inbox{
+    margin-top: 100px;
+}
+
+.sat{
+    border-radius: 5%;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-image : linear-gradient(106deg, rgb(22, 116, 204), rgb(255, 201, 49));
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    height: 170px;
+    width: 100px;
+    border:  solid white;
+    
+}
+
+.sun{
+    border-radius: 5%;
+    color: white;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: bold;
+    background-image : linear-gradient(106deg, rgb(22, 116, 204), rgb(255, 201, 49));
+    display: flex;
+    float: left;
+    margin-left: 40px;
+    height: 170px;
+    width: 100px;
+    border: solid white;
+}
+
+.mon{
+    border-radius: 5%;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-image : linear-gradient(106deg, rgb(22, 116, 204), rgb(255, 201, 49));
+    display: flex;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 500px;
+    height: 170px;
+    width: 100px;
+    border: solid white;
+}
+
+
+#sat-img , #sun-img, #mon-img{
+    position:absolute;
+    top: 75%;
+    height: 50px;
+    width: 50px;
+}
+
+.deg1{
+    position:absolute;
+    top: 80%;
+    height: 20px;
+    width: 20px;
+}
+
+#rain{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 5%;
+    left: 5%;
+}
+
+.location{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.deg{
+    position: absolute;
+    left: 79%;
+    top:8%;
+    font-weight: bold;
+}
+
+span{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#sunrise{
+    position: absolute;
+    top: 26%;
+    left: 5%;
+   height: 50px;
+   width: 50px;
+
+}
+
+.a{
+    position: absolute;
+    text-align: left;
+    font-family: cursive;
+    top: 23%;
+    left: 20%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+#humidity{
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    height: 50px;
+    width: 50px;
+}
+
+.b{
+    position: absolute;
+    text-align: left;
+    font-family: cursive;
+    top: 38%;
+    left: 20%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+#wind{
+    position: absolute;
+    top: 42%;
+    left: 55%;
+    height: 50px;
+    width: 50px;
+}
+
+.c{
+    position: absolute;
+    text-align: right;
+    top: 23%;
+    left: 70%;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#sunset{
+    position: absolute;
+    top: 27%;
+    left: 55%;
+    height: 50px;
+    width: 50px;
+}
+
+.d{
+    position: absolute;
+    text-align: right;
+    font-family: cursive;
+    top: 38%;
+    left: 70%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.box {
+    display: block;
+    position: relative;
+    box-shadow: 5px 20px 15px 5px rgba(0, 0, 0, 0.5);
+    left: 60%;
+    margin-top: 5%;
+    border-radius: 2%;
+    height: 570px;
+    width: 400px;
+    background-color: rgb(250, 248, 248);
+    border: solid rgb(99, 98, 98);
+    animation: slideFromRight 5s linear infinite;
+}
+
+ @keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+} 
+
+@media only screen and (max-width: 767px) {
+    body{
+        background-image: url("https://t3.ftcdn.net/jpg/02/50/08/68/360_F_250086872_srlXRqANYR2IbNfIylRDc3eMO9MinjnV.jpg");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+
+    nav{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    color: white;
+    width: 50%;
+    margin-left: 20%;
+    justify-content: space-between;
+    text-align: center;
+    }
+
+    h2 , .para{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .box {
+    display: block;
+    position: relative;
+    justify-content: center;
+    box-shadow: 5px 20px 15px 5px rgba(0, 0, 0, 0.5);
+    left: 20%;
+    margin-top: 20%;
+    border-radius: 2%;
+    height: 570px;
+    width: 400px;
+    background-color: rgb(250, 248, 248);
+    border: solid rgb(99, 98, 98);
+    animation:none;
+    }
+}
