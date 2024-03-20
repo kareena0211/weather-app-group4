@@ -48,6 +48,24 @@ body {
 }
 
 /*..................contact ......................*/
+.BackToMenu{
+  text-align: center;
+  width: 300px;
+}
+.BackToMenu ul li {
+  list-style: none;
+  line-height: 2;
+}
+.BackToMenu ul li i{
+  color: white;
+}
+.BackToMenu ul li a{
+  color: white;
+  text-decoration: none;
+}
+.BackToMenu ul{
+  margin-top: 16px;
+}
 .heading:hover{
   color: orange; 
   transform: translateY(-1px); 
