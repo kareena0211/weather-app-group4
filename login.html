@@ -3,25 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css">
     <title>Simple Signup Form</title>
-
-    <link rel="stylesheet" href="login.css" />
   </head>
-  <body>
-    <div class="container">
-      <h1 id="head">LOGIN</h1>
-      <form>
-        <input type="text" placeholder="Enter your name" required /> <br />
-        <input type="password" placeholder="Password" required />
 
-        <button type="submit" onclick="refreshPage()">LOGIN</button>
-      </form>
-      <p>Create Account <a href="#">Sign Up</a></p>
-    </div>
-    <script>
-      function refreshPage() {
-        location.reload();
-      }
-    </script>
-  </body>
+  <body>
+    <nav>
+      <div class="logoSection">
+          <img src="./assets//sunrise.svg" alt class="logo">
+          <p><a href="index.html">AccuWeather</a></p>
+      </div>
+      <ul>
+          <li><a href="index.html" class="bgColor">Home</a></li>
+              </a></li>
+          <li><img src="./assets/account-avatar-profile.svg" alt></li>
+      </ul>
+  </nav>
+  <div class="container">
+    <h1 className="heading">LOGIN</h1>
+    <form>
+      <input type="email" placeholder="Enter your Email" required />
+      <input type="password" placeholder="Enter your Password" required />
+      <button class="button" type="submit" onclick="refreshPage()">
+        Login 
+      </button>
+    <p class="p"> Create an account? <a href="signUp.html">Sign Up</a></p>
+    </form>
+  </div>
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
+  </script>
+  </body>
 </html>
