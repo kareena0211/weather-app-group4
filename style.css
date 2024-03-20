@@ -48,14 +48,6 @@ body {
 }
 
 /*..................contact ......................*/
-.contact,
-.Information_flex,
-.ContactSesction{
-  display: flex;
-}
-.Information{
-  height: 150px;
-}
 .BackToMenu{
   text-align: center;
   width: 300px;
