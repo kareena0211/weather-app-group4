@@ -1,61 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/Image/SunPreloadergif.gif">
-    <title>Mudni Weather-forcast</title>
-    <script src="index.js" defer></script>
-</head>
-<body>
-    <nav>
-        <a href="Home">Home</a>
-        <a href="About">About Us</a>
-        <a href="Login">Login</a>
-        <a href="Sign">Sign Up</a>
-    </nav>
-    <h2>Weather Forcast</h2>
-    <div class="para">
-    <p>where every click brings you closer to meteorological mastery! <br> Get ready to embark on a journey through weather wonders with our <br> sleek interface.
-        Instantly check current conditions and dive into detailed  <br>forecasts for any location worldwide</p>
-    </div>
-    
-    <div class="box">
-        <div class="city">
-            <img src="assets\rain.svg" id="rain">
-            <p class="location">Pune <br><span>Hourly Weather</span><br> <span class="deg">30°</span></p>
-            <img src="\assets\sunrise.svg" id="sunrise"/>
-            <p class="a">Sunrise <br><span>6.45AM</span></p>
-            <img src="assets\humidity.svg" id="humidity">
-            <p class="b">Humadity <br><span>70%</span></p><br>
-            <img src="assets\sunset.svg" id="sunset">
-            <p class="c">Sunset<br><span>6.45PM</span></p>
-            <img src="assets\wind.svg" id="wind"> 
-            <p class="d">Windspeed <br><span>8 Km/h</span></p>
-        <hr>
-        </div>  
-
-        <div id="inbox">
-            
-            <div class="sat">
-                <img src="https://themesfamily.com/2024/mugni/assets/img/icon/1.png"  id="sat-img" alt="sat-weather">
-                <p>Sat</p>
-                <p class="deg1">+30°</p>
-            </div>
-            <div class="sun">
-                <img src="https://themesfamily.com/2024/mugni/assets/img/icon/2.png" id="sun-img" alt="sun-weather">
-                <p>Sun</p>
-                <p class="deg1">+30°</p>
-            </div>
-            <div class="mon">
-                <img src="https://themesfamily.com/2024/mugni/assets/img/icon/3.png" id="mon-img" alt="mon-weather">
-                <p>Mon</p>
-                <p class="deg1">+30°</p>
-            </div>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/Image/SunPreloadergif.gif">
+        <title>Mudni Weather-forcast</title>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <nav class="navBar">
+            <a href="Home">Home</a>
+            <a href="About">About Us</a>
+            <a href="Login">Login</a>
+            <a href="Sign">Sign Up</a>
+        </nav>
+        <h2>Weather Forcast</h2>
+        <div class="para">
+            <p>where every click brings you closer to meteorological mastery!
+                <br> Get ready to embark on a journey through weather wonders
+                with our <br> sleek interface.
+                Instantly check current conditions and dive into detailed
+                <br>forecasts for any location worldwide</p>
         </div>
-    </div>
 
-</body>
+        <div class="box">
+            <div class="city">
+                <img src="assets\rain.svg" id="rain">
+                <p class="location">Pune <br><span>Hourly Weather</span><br>
+                    <span class="deg">30°</span></p>
+                <img src="\assets\sunrise.svg" id="sunrise" />
+                <p class="a">Sunrise <br><span>6.45AM</span></p>
+                <img src="assets\humidity.svg" id="humidity">
+                <p class="b">Humadity <br><span>70%</span></p><br>
+                <img src="assets\sunset.svg" id="sunset">
+                <p class="c">Sunset<br><span>6.45PM</span></p>
+                <img src="assets\wind.svg" id="wind">
+                <p class="d">Windspeed <br><span>8 Km/h</span></p>
+                <hr>
+            </div>
+
+            <div id="inbox">
+
+                <div class="sat">
+                    <img
+                        src="https://themesfamily.com/2024/mugni/assets/img/icon/1.png"
+                        id="sat-img" alt="sat-weather">
+                    <p>Sat</p>
+                    <p class="deg1">+30°</p>
+                </div>
+                <div class="sun">
+                    <img
+                        src="https://themesfamily.com/2024/mugni/assets/img/icon/2.png"
+                        id="sun-img" alt="sun-weather">
+                    <p>Sun</p>
+                    <p class="deg1">+30°</p>
+                </div>
+                <div class="mon">
+                    <img
+                        src="https://themesfamily.com/2024/mugni/assets/img/icon/3.png"
+                        id="mon-img" alt="mon-weather">
+                    <p>Mon</p>
+                    <p class="deg1">+30°</p>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer-area">
+            <div class="main">
+                <div class="footer">
+                    <div class="single-footer">
+                        <h4>About Project</h4>
+                        <p>
+                            Welcome to WeatherNow, your go-to destination for
+                            reliable weather
+                            forecasts and information. We understand the
+                            importance of
+                            accurate weather predictions in planning your day,
+                            whether it's
+                            for work, outdoor activities, or travel.
+                        </p>
+                        <p>
+                            At WeatherNow, our mission is to deliver precise and
+                            timely
+                            weather updates tailored to your location. Our team
+                            consists of
+                            dedicated meteorologists
+                        </p>
+
+                        <div class="footer-social">
+                            <a href><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href><i class="fa-brands fa-twitter"></i></a>
+                            <a href><i class="fa-brands fa-linkedin"></i></a>
+                            <a href><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="single-footer">
+                        <h4>main Menu</h4>
+                        <ul>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>home</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>about
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>serives</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>gallery</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="single-footer">
+                        <h4>Extra</h4>
+                        <ul>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>home</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>about
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>serives</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>gallery</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="single-footer">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>Navgurukul
+                                    Sarjapur
+                                    Campus</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>+000
+                                    000 000</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>abc123@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href><i
+                                        class="fa-solid fa-chevron-right"></i>www.demo.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ocean">
+                <div class="wave">
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="copy">
+                <p class="f">&copy; 2024 all right reversed</p>
+            </div>
+        </footer>
+
+    </body>
 </html>
