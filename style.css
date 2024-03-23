@@ -4,46 +4,8 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googlepis.com/css2?family=poppins&display=swap');
 body {
-  font-family: 'poppins', sans-serif;
-  scroll-behavior: smooth;
-}
-/* ============================= */
-/* Preloader styling here*/
-.preloader {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 9999;
-}
-
-/* Style for the loader animation (optional) */
-.loader {
-  border: 8px solid #f3f3f3; /* Light grey */
-  border-top: 8px solid #3498db; /* Blue (initial color) */
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  animation: spin 1s linear infinite;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-  0% { border-top: 8px solid #3498db; } /* Blue */
-  25% { border-top: 8px solid #ff6384; } /* Red */
-  50% { border-top: 8px solid #ffbf00; } /* Yellow */
-  75% { border-top: 8px solid #4caf50; } /* Green */
-  100% { border-top: 8px solid #3498db; } /* Back to Blue */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* =========================== */
@@ -69,7 +31,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -87,10 +49,11 @@ nav ul li {
 }
 .bgColor{
   padding: 8px;
-  background-color:white;
+  /* background-color:white; */
 }
 
 nav ul li a {
+  font-size: 1.2rem;
   word-wrap: break-word;
   text-decoration: none;
   color: black;
@@ -98,8 +61,8 @@ nav ul li a {
 }
 
 .bgColor:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  /* color: black; */
   padding: 8px;
   border-radius: 10px;    
 }
@@ -139,9 +102,10 @@ nav ul li img{
   line-height: 1.5;
 }
 .para p{
-  font-size: 20px;
+  font-size: 1.4rem;
 }
 
+/* search input box and button */
 .Search{
   margin-top: 16px;
 }
@@ -149,15 +113,27 @@ nav ul li img{
 .Search input{
   border: none;
   border-radius: 10px;
+  height: 3rem;
+  font-size: 1rem;
+  width: 70%;
+  padding: 10px;
 }
 .Search button{
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: 10px;
   border-radius: 10px;
-  background-image : linear-gradient(106deg, rgb(22, 116, 204), rgb(255, 201, 49))
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  background-image : linear-gradient(106deg,  rgb(94, 166, 233),rgb(236, 215, 154))
 }
+
+/*  search card style here*/
 .Getdatacards{
   height: 70vh;
   width: 25vw;
-  border: 2px solid green;
+  border: 2px solid rgb(215, 241, 215);
   border-radius: 16px;
   background-color: white;
 }
@@ -174,7 +150,7 @@ nav ul li img{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image : linear-gradient(106deg, rgb(22, 116, 204), rgb(255, 201, 49));
+  background-image : linear-gradient(106deg, rgb(94, 166, 233),rgb(236, 215, 154));
   border-radius: 16px;
   line-height: 3;
 }
@@ -189,7 +165,7 @@ nav ul li img{
 .fa-solid,
 .fas{
   font-size: 40px;
-  color: rgb(255, 201, 49)
+  color: rgb(238, 196, 70)
 }
 .GetSearchData{
   display: flex;
@@ -230,123 +206,146 @@ nav ul li img{
       justify-content: center;
       text-align: center;
   }
+}
 
-/*......................footer style here............................. */
-.footer-area {
-  background-image: linear-gradient(106deg,rgb(22, 116, 204),rgb(255, 201, 49));
-  color: #fff;
-}
-.footer {
+/* ================================== */
+/* About Oer Team style here */
+.about_main_box {
+  background-image: url("https://t4.ftcdn.net/jpg/04/61/23/23/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
-.AboutSectionInformation h4 {
-  font-size: 22px;
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.about__textArea {
+  margin-bottom: 30px;
+
+}
+
+.about__mainHeading {
+  font-size: 36px;
   margin-bottom: 20px;
-}
-.footer-social {
-  margin-top: 20px;
-}
-.footer-social a {
-  color: #fff;
-  border: 1px solid #fff;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  align-items: center;
   text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
 }
-.AboutSextion{
+
+.about__mainPara {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #0e0d0d;
+  text-align: center;
+}
+
+.about__imageContainer {
   display: flex;
-  justify-content:space-between;
-  align-items: center;
-  gap: 64px;
-  padding: 32px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
-/*..................contact ......................*/
-.BackToMenu{
+.about__imageBox {
+  flex: 0 0 calc(33.333% - 20px);
+  margin-bottom: 20px;
   text-align: center;
-  width: 300px;
+  padding: 20px;
+  background-color: #eff6ff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(110, 109, 109, 0.1);
+  transition: transform 0.5 s ease-in-out;
 }
-.BackToMenu ul li {
-  list-style: none;
-  line-height: 2;
-}
-.BackToMenu ul li i{
-  color: white;
-}
-.BackToMenu ul li a{
-  color: white;
-  text-decoration: none;
-}
-.BackToMenu ul{
-  margin-top: 16px;
-}
-.heading:hover{
-  color: orange; 
-  transform: translateY(-1px); 
 
-/* ======================================= */
-/* Search weather data css here */
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  text-align: center;
+.about__imageBox:hover {
+  transform: scale(1.05);
+  border: 1px solid #94a3b8;
 }
-.ic:hover{
-  background-color: orange;
-  transform: translateY(-1px);
-  color: white;
 
-input[type="text"] {
-  width: 70%;
-  padding: 10px;
+.about__imageBox img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid;
+  padding: 5px;
+}
+
+.about__innerHead {
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.about__innerPara {
+  font-size: 1.3rem;
+  color: #334155;
 }
+/* ..............  Media Query ................. */
 
-button:hover {
-  background-color: #0056b3;
-}
+@media only screen and (max-width: 600px) {
 
-#weatherData {
-  margin-top: 20px;
+  .about__container {
+      max-width: 80%;
+  }
+
+  .about__textArea {
+      margin-bottom: 20px;
+  }
+
+  .about__mainHeading {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  }
+
+  .about__mainPara {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+  }
+
+  .about__imageContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .about__imageBox {
+      flex: 0 0 calc(50% - 20px);
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .about__imageBox img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+  }
+
+  .about__innerHead {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  .about__innerPara {
+      font-size: 14px;
+      color: #777;
+  }
 }
-/* ===========wave ocean============= */
-.copy {
-  background-color: black;
-  opacity: 0.7;
-  text-align: center;
-  text-transform: capitalize;
-  color: #fff;       
-  padding: 20px 0;
-}
-.copy p:nth-child(1){
-  color:gray;
-  font-size: 12px;
-}
-.copy p:nth-child(2){
-  margin-top: 10px;
-  color: #cbcdce;
 
 /* ====================================== */
 /* footer style here */
 .footer-area {
-  background-image: linear-gradient(106deg,rgb(22, 116, 204),rgb(255, 201, 49));
-  color: #fff;
+  background-image: linear-gradient(106deg,rgb(94, 166, 233),rgb(236, 215, 154));
 }
 
 .footer {
@@ -356,12 +355,11 @@ button:hover {
   flex-direction: row;
 }
 
-.AboutSectionInformation h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
+.AboutSectionInformation h1 {
+  margin-bottom: 1rem;
 }
 .AboutSectionInformation p{
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -370,16 +368,18 @@ button:hover {
 }
 
 .footer-social a {
-  color: #fff;
-  border: 1px solid #fff;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-  line-height: 40px;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 10px;
+}
+.footer-social .round{
+  border: 3px solid black;
+}
+.footer-social i{
+  font-size: 32px;
+  text-align: center;
 }
 .AboutSextion{
   display: flex;
@@ -399,10 +399,11 @@ button:hover {
   padding: 20px 0;
 }
 .copy p:nth-child(1){
-  color:gray;
+  font-size: 1.3rem;
+  color: #cbcdce;
 }
 .copy p:nth-child(2){
-  font-size: 16px;
+  font-size: 1.3rem;
   margin-top: 10px;
   color: #cbcdce;
 }
@@ -468,17 +469,14 @@ button:hover {
 @media only screen and (max-width: 768px) {
   .main {
       padding: 0 10px;
-      /* Adjust padding for smaller screens */
   }
 
   .single-footer {
       width: 100%;
-      /* Single item per row on small devices */
   }
 
   .footer-area {
       margin-top: 100px;
-      /* Adjust margin-top for smaller screens */
   }
 
   .ocean {
@@ -493,184 +491,4 @@ button:hover {
       position: fixed;
       bottom: 0;
   }
-}
-
-/* ================================== */
-/* About Oer Team style here */
-.about_main_box {
-  background-image: url("https://t4.ftcdn.net/jpg/04/61/23/23/360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-}
-
-.about__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-}
-
-.about__textArea {
-  margin-bottom: 30px;
-
-}
-
-.about__mainHeading {
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.about__mainPara {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #0e0d0d;
-  text-align: center;
-}
-
-.about__imageContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-
-.about__imageBox {
-  flex: 0 0 calc(33.333% - 20px);
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 20px;
-  background-color: #eff6ff;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(110, 109, 109, 0.1);
-  transition: transform 0.5 s ease-in-out;
-}
-
-.about__imageBox:hover {
-  transform: scale(1.05);
-  border: 1px solid #94a3b8;
-}
-
-.about__imageBox img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  border: 2px solid;
-  padding: 5px;
-}
-
-.about__innerHead {
-  margin-bottom: 10px;
-}
-
-.about__innerPara {
-  font-size: 16px;
-  color: #334155;
-}
-/* ....................................  Media Query ........................................... */
-
-@media only screen and (max-width: 600px) {
-
-  .about__container {
-      /* border: 2px solid; */
-      max-width: 80%;
-  }
-
-  .about__textArea {
-      margin-bottom: 20px;
-  }
-
-  .about__mainHeading {
-      font-size: 2rem;
-      margin-bottom: 10px;
-  }
-
-  .about__mainPara {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #555;
-  }
-
-  .about__imageContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-
-  .about__imageBox {
-      flex: 0 0 calc(50% - 20px);
-      margin-bottom: 20px;
-      text-align: center;
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .about__imageBox img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-  }
-
-  .about__innerHead {
-      font-size: 18px;
-      margin-bottom: 10px;
-  }
-
-  .about__innerPara {
-      font-size: 14px;
-      color: #777;
-  }
-  }
-
-  100% {
-      transform: translateX(-50%);
-  }
-}
-/* Global Media Query for mobile screens up to 320px */
-@media only screen and (max-width: 320px) {
-  body {
-    font-size: 14px; 
-  }
-
-  .main {
-    padding: 0 5px; 
-  }
-
-  .single-footer {
-    width: 100%; 
-    max-width: none; 
-    margin-bottom: 10px; 
-  }
-
-  .single-footer h4 {
-    font-size: 18px; 
-    margin-left: 0; 
-  }
-
-  .single-footer ul {
-    margin-left: 0; 
-  }
-
-  .footer-social {
-    margin-top: 10px; 
-  }
-
-  .footer-social a {
-    margin: 0 3px;
-    width: 25px; 
-    height: 30px; 
-    line-height: 30px; 
-    font-size: 14px;
-  }
-  .BackToMenu{
-    text-align: center;
-  }
-
 }

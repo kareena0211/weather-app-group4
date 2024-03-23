@@ -1,16 +1,3 @@
-// preloader js code here
-document.addEventListener("DOMContentLoaded", function () {
-    const preloader = document.querySelector('.preloader');
-    preloader.innerHTML = '<div class="loader"></div>';
-
-    // Hide the preloader after 5 seconds and show the content
-    setTimeout(function () {
-        preloader.style.display = 'none';
-        document.querySelector('.content').style.display = 'block';
-    }, 2000); // Adjust duration in milliseconds (5 seconds)
-});
-
-
 // Dummy data for searching 
 const dummyData = [
     {city: "Jaunpur", state: "Uttar Pradesh", sunrise: "5:50am", sunset: "6:50pm", temperature: "28°C", humidity: "35%", windspeed: "10km/h", dayData: [
@@ -76,7 +63,7 @@ function displayResults(results) {
               <p>${result.state}</p>
             </div>
           </div>
-          <div class="middileSection">
+          <div>
             <p>Temperature</p>
             <p>${result.temperature}</p>
           </div>
