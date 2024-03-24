@@ -6,26 +6,71 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Login-Signup.css">
         <link rel="icon" href="./assets/rain.svg">
         <title>Weather-forecast</title>
         <script src="index.js" defer></script>
     </head>
     <body id="Home">
-        <!-- navBar here -->
-        <nav>
-            <div class="logoSection">
+        <nav class="nav-bar">
+            <div class="icon-nav">
                 <img src="./assets//sunrise.svg" alt class="logo">
-                <p>AccuWeather</p>
+                <span>AccuWeather</span>
             </div>
-            <ul>
-                <li><a href="#Home" class="bgColor">Home</a></li>
-                <li><a href="#AboutOurTeam" class="bgColor">Our Team</a></li>
-                <li><a href="#AboutPage" class="bgColor">About Project</a></li>
-                <li><a href="login.html" class="bgColor">Login</a></li>
-                <li><a href="signUp.html" class="bgColor">SignUp</a></li>
-                <li><a href="#AboutOurTeam" class="profileBG"><img src="./assets/profileImage.png" alt></a></li>
+
+            <ul class="list-nav-bar active">
+                <li class="list-item"><a href="#Home">Home</a></li>
+                <li class="list-item"><a href="#AboutOurTeam">Our Team</a></li>
+                <li class="list-item"><a href="#AboutPage" class="bgColor">About Project</a></li>
+                <li class="list-item"><a href="#" class="bgColor" id="loginButton">Login</a></li>
+                <li class="list-item"><a href="#" class="bgColor" id="signupButton">Signup</a></li>
+                <li class="list-item"><a href="#AboutOurTeam" class="profileBG"><img src="./assets/profileImage.png" alt></a></li>
             </ul>
+            <div class="fas burger-menu" id="burger-menu">&#9776;</div>
         </nav>
+
+        <!-- Login model page -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <div class="container">
+                    <h1 class="heading">Login</h1>
+                    <form class="formCase">
+                        <input class="input-box" type="email"
+                            placeholder="Enter your Email" required />
+                        <input class="input-box" type="password"
+                            placeholder="Enter your Password" required />
+                        <button class="button" type="submit">Login</button>
+                        <p class="p">Don't have an account? <a
+                                href="#" onclick="openSignupModal()">Sign
+                                Up</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- SignUp Model page -->
+        <div id="signupModal" class="modal">
+            <div class="modal-content modal-content-signup">
+                <span class="close closeSignup"
+                    onclick="closeSignupModal()">&times;</span>
+                <div class="container">
+                    <h1 class="heading">SignUp</h1>
+                    <form class="formCase">
+                        <input class="input-box" type="text"
+                            placeholder="Enter your Full Name" required />
+                        <input class="input-box" type="email"
+                            placeholder="Enter your Email" required />
+                        <input class="input-box" type="password"
+                            placeholder="Enter your Password" required />
+                        <button class="button" type="submit">SignUp</button>
+                        <p class="p">Already have an account? <a
+                                href="#"
+                                onclick="openLoginModal()">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <!-- Home/Landing page here -->
         <div class="main">
@@ -36,7 +81,7 @@
                     wonders with our sleek interface. Instantly check current
                     conditions and dive into detailed forecasts for any location
                     worldwide</p>
-                <!-- Search Part here -->
+
                 <div class="Search">
                     <input type="text" id="search-input"
                         placeholder="Search weather city and state both Ex: Bihar,Shimla"
@@ -45,7 +90,6 @@
                 </div>
 
             </div>
-            <!-- Search data show here -->
             <div>
                 <div id="search-results">
                     <div class="Getdatacards">
