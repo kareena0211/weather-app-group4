@@ -4,8 +4,8 @@
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 110vw;
+    height: 130vh;
     overflow: auto;
     background-color: rgba(8, 8, 8, 0.4);
 }
@@ -13,14 +13,14 @@
 .modal-content {
     width: 50%;
     height: 50%;
-    margin: 10% auto;
+    margin: 5% 20%;
     padding: 20px;
     border-radius: 16px;
     border: 1px solid #888;
     background-color: #fefefe;
 }
 .modal-content-signup{
-    height: 55%;
+    height: 70vh;
     padding: 25px;
 }
 
@@ -66,6 +66,9 @@ input::placeholder {
     font-weight: 500;
     font-size: 1.3rem;
 }
+.p{
+    margin-top: -1rem;
+}
 .input-box{
     border: none;
     border-radius: 10px;
@@ -75,15 +78,31 @@ input::placeholder {
 .button {
     border: none;
     border-radius: 10px;
-    background-color: #3b82f6;
+    background-color: #879ec2;
 }
+.moreOptionToLogin{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+.moreOptionToLogin >button{
+    background-color:rgb(185, 184, 184);
+}
+.moreOptionToLogin >button:hover{
+    background-color: white;
+    border: 1px solid;
+}
+
 
 @media only screen and (max-width: 1024px){
     .modal-content-signup{
-        height: 70%;
+        height: 50%;
     }
     .modal-content{
-        height: 70%;
+        height: 50%;
+    }
+    .moreOptionToLogin > .button{
+        font-size: 1rem;
     }
 }
 
@@ -161,21 +180,36 @@ input::placeholder {
 }
 
 @media screen and (max-width: 768px){
-    .modal-content-signup{
-        height: 70%;
+    .heading{
+        font-size: 1.5rem;
+    }
+    .modal{
+        height: 75vh;
     }
     .modal-content{
-        height: 70%;
+        margin-right: 7.7rem;
+    }
+    .modal-content-signup{
+        height: 70vh;
+    }
+    .formCase{
+        padding: 15px;
+    }
+    .button,
+    .input-box{
+        height: 7vh;
+    }
+    .p a,
+    .p{
+        font-weight: bolder;
     }
     .formCase a,
     .formCase p{
         text-decoration: none;
     }
+
 }
 @media screen and (max-width: 425px){
-    .modal-content-signup{
-        height: 70%;
-    }
     .formCase a,
     .formCase p{
         text-decoration: none;
@@ -186,8 +220,33 @@ input::placeholder {
         width: 110%;
     }
     .button{
-        height: 3rem;
         width: 110%;
+    }
+    .moreOptionToLogin>.button{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .modal{
+        height: 75vh;
+    }
+    .modal-content{
+        margin-right: 4.3rem;
+    }
+    .modal-content-signup{
+        height: 68vh;
+    }
+    .formCase{
+        padding: 15px;
+    }
+    .button,
+    .input-box{
+        height: 7vh;
+    }
+    .p a,
+    .p{
+        font-weight: bolder;
     }
 }
 @media screen and (max-width: 375px){
@@ -201,7 +260,51 @@ input::placeholder {
         width: 120%;
     }
     .button{
-        height: 3rem;
         width: 120%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .modal{
+        height: 75vh;
+    }
+    .modal-content{
+        margin-right: 3.7rem;
+    }
+    .modal-content-signup{
+        height: 68vh;
+    }
+    .formCase{
+        padding: 15px;
+    }
+    .button,
+    .input-box{
+        height: 7vh;
+    }
+    .p a,
+    .p{
+        font-weight: bolder;
+    }
+}
+@media screen and (max-width: 320px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    .modal{
+        height: 80vh;
+    }
+    .modal-content{
+        margin-right: 3.2rem;
+    }
+    .modal-content-signup{
+        height: 70vh;
+    }
+    .button,
+    .input-box{
+        height: 7vh;
+    }
+    .p a,
+    .p{
+        font-weight: bolder;
     }
 }
