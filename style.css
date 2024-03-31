@@ -1,7 +1,12 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Open Sans',Arial;
 }
 
 @import url("https://fonts.googlepis.com/css2?family=poppins&display=swap");
@@ -73,10 +78,17 @@ nav {
   height: 3.5rem;
   background-image: url(./assets/BgImage.jpg);
 }
-
+.icon-nav{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.icon-nav span{
+    font-size: 1.5rem;
+}
 .logo {
-  border-radius: 1rem;
-  height: 3rem;
+    height: 3rem;
+    cursor: pointer;
 }
 .logoSection {
   display: flex;
@@ -95,9 +107,10 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  margin: 0 1rem;
-  /* border-radius: 15px; */
+.list-item a:hover {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
 }
 .bgColor {
   padding: 8px;
@@ -149,8 +162,8 @@ nav ul li img {
 }
 
 .para {
-  width: 50%;
-  line-height: 1.5;
+    width: 50%;
+    line-height: 1.5;
 }
 .para p {
   font-size: 20px;
